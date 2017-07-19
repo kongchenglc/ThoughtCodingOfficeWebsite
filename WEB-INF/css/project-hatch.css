@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background: #EDEFF0;
+	background-size:cover;
+  background-image: url(../images/bk_1.jpg);
+	background-attachment: fixed;
+}
+
+@font-face{
+	font-family: 'HoneyScript';
+	src:url('font/HoneyScript-Light.ttf')
+	format('truetype');
+}
+/*-------------------------------header------------------------------------*/
+
+/*-------------------------------mainbody------------------------------------*/
+.mainbody{
+	margin-top: 45px;
+	width: 70%;
+	margin-left: 150px;
+}
+.mainbody .jumbotron{
+	text-align: center;
+	padding: 0;
+	margin:50px 0 40px 0;
+}
+.mainbody .row .col-md-9 p{
+	text-indent: 2em;
+	text-align: justify;
+	color:#5e5e5e;
+}
+.affix,.affix-top,.affix-bottom{
+	width:194px;
+}
+.mainbody ul .active{
+	color:#555555;
+}
+.mainbody .col-md-9 h3{
+    padding-top: 58px;
+    margin-top: -58px;
+}
+.mainbody .col-md-9 p{
+  padding: 15px 0;
+}
+.events-body{
+  background-color:#ffffff!important;
+  text-align:justify;
+}
+.events-footer{
+  margin-top: -30px;
+  font-size: 50px;
+  color:#5bc0de;
+}
+dd .time{
+  width: 200px;
+}
+/*导航css*/
+  header{
+    z-index: 10000;
+  } 
+  ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 50px; /* Set the top position of pinned element */
+    }
+/*-------------------------------footer------------------------*/
+
+/*-------------------------------media-------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .tab-content{
+   	width: 100%;
+   }
+   .mainbody .row .tab_content{
+   	width: 100%;
+   }
+   .slide{
+   	display: none;
+   }
+}

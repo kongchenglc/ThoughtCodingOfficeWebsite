@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+/*-------------------------------header------------------------------------*/
+
+/*-------------------------------mainbody----------------------------------*/
+.mainbody{
+	margin-top: 55px;
+	width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+	height: 600px;
+}
+.form{
+	width: 50%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:white;
+	margin-top: 50px;
+	padding-top: 20px;
+	margin-bottom: -10px;
+	-webkit-filter: opacity(80%); /* Chrome, Safari, Opera */
+	filter: opacity(90%);
+}
+.form-group{
+	margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+    .form{
+    	width: 100%;
+    	height: 70%;
+    }
+    .form-group{
+    	margin-top: 20px;
+    }
+    .form-horizontal .form-group{
+    	margin: 0px;
+    }
+}
+/*-------------------------------footer------------------------------------*/

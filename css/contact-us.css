@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background: #EDEFF0;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+@font-face{
+	font-family: 'HoneyScript';
+	src:url('../font/HoneyScript-Light.ttf')
+	format('truetype');
+}
+/*-------------------------------header------------------------------------*/
+
+/*-------------------------------mainbody------------------------------------*/
+.mainbody{
+	width: 70%;
+	margin-top: 45px;
+	margin-left: 180px;
+	margin-bottom: 80px;
+}
+.mainbody .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.mainbody .row .word{
+	margin: 50px 0 20px 0;
+	font-size: 60px;
+}
+
+.contact{
+	clear:both;
+	width: 100%;
+	height: 310px;
+	margin-top: 10px;
+}
+
+.contact .way{
+	margin-bottom: 10px;
+}
+
+.contact .way div{
+	float:left;
+}
+.contact .way .img{
+	margin-left: 10px;
+	float:left;
+}
+.contact .way .address{
+	margin-bottom: 10px;
+	float:left;
+}
+.form-group{
+	min-height: 20px;
+}
+.bd-map{
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	background-color: white;
+    margin-top: 0px;
+}
+
+/*-------------------------------footer------------------------*/
+footer{
+	background-color: white;
+	margin: 10px auto;
+}
+
+footer .container{
+	width: 80%;
+}
+
+
+.friend-link{
+	text-align: center;
+	margin:15px auto;
+	color: #b4bbbf;
+
+}
+
+.friend-link>a{
+     color: #b4bbbf;
+}
+
+.col-md-12{
+	text-align: center;
+	margin:0px;
+}
+
+.container-fluid .row .col-md-2 >a{
+	margin: 15px 10px;
+  float: left;
+}
+.github{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;
+}
+
+.weixin{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+
+.weibo{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+.copyright{
+	text-align: center;
+	margin:5px auto  20px;
+	
+}
+
+.row{
+	margin-top: 15px;
+}
+.btn{
+	margin-top: 10px;
+}
+/*-------------------------------media------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .btn-submit{
+   	margin: 20px 0px 0px 150px;
+   	float: left;
+   }
+   .hider{
+   	display:none;
+   }
+ .container{
+ 	padding: 0px;
+ }
+ .row{
+ 	margin: 0px;
+ }
+ .navbar-brand{
+ 	padding: 15px 30px;
+ }
+}

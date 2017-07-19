@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background: #EDEFF0;
+	background-size:cover;
+	background-attachment: fixed;
+	background-image: url(../images/background-check.jpg); 
+	background-repeat: no-repeat;
+}
+
+/*----------------------------------header------------------------------------*/
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	text-align: middle;
+	margin: 0px;
+	background-color: white;
+	z-index: 1;
+}
+
+/*---------------------------------Mainbody--------------------------------*/
+.mainbody{
+	height: 410px;
+}
+.btn-apply{
+	margin-left: 30px;
+}
+.question h5{
+	text-align: center;
+}
+.center{
+	text-align:center;
+}
+/*---------------------------------footer---------------------------------*/
+
+/*---------------------------------media---------------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .hider{
+   	display:none;
+   }
+}

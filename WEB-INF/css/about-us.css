@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background:#EDEFF0;
+	background-size:cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow-y:scroll;
+}
+
+/*-------------------------------header------------------------------------*/
+
+/*-------------------------------mainbody------------------------------------*/
+.mainbody{
+	width: 70%;
+	margin:0 auto;	
+	margin-top: 75px;
+	margin-left: 250px;
+}
+.mainbody .img .img_{
+	float: left;
+	margin: 1px;
+	opacity: 0.61;
+	fliter:alpha(opacity:61);
+}
+.mainbody a{ 
+	color:#458aae;
+}
+.mainbody .panel a:link{
+	text-decoration: none;
+}
+.img_ img{
+	width: 100%;
+	height: 100%;
+}
+.panel a{
+	display: inline-block;
+	width: 100%;
+}
+/*-------------------------------footer------------------------*/
+footer{
+	background-color: white;
+	margin: 10px auto;
+}
+
+footer .container{
+	width: 80%;
+}
+
+
+.friend-link{
+	text-align: center;
+	margin:15px auto;
+	color: #b4bbbf;
+
+}
+
+.friend-link>a{
+     color: #b4bbbf;
+}
+
+.col-md-12{
+	text-align: center;
+	margin:0px;
+}
+
+.container-fluid .row .col-md-2 >a{
+	margin: 15px 10px;
+  float: left;
+}
+.github{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;
+}
+
+.weixin{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+
+.weibo{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+.copyright{
+	text-align: center;
+	margin:5px auto  20px;
+	
+}
+
+.row{
+	margin-top: 15px;
+}
+
+.btn{
+	margin-top: 10px;
+}
+/*-------------------------------media------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .mainbody .row .tab_content{
+   	width: 100%;
+  }
+}

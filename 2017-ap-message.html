@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>信息列表</title>
+	<meta name="description" content="实验室官方网站">
+	<meta name="keywords" content="西安邮电大学，实验室，ThoughtCoding">
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/2017-ap-message.css">
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <script type="text/javascript">
+   getcookie();
+  </script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+
+  <!--头部开始-->
+  <header>
+   <div class="navbar navbar-default" role="navigation">
+     <div class="container">
+      <div class="navbar-header">
+       　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <span class="sr-only">Toggle Navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+       <a href="homepage.html" class="navbar-brand">ThoughtCoding实验室</a>
+     </div>
+     <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+     <div class="collapse navbar-collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="2017-ap-home.html">主页</a></li>
+        <li><a href="2017-ap-judge-num.html">评价</a></li>
+        <li><a href="2017-ap-message.html">信息列表</a></li>
+        <!--2016纳新专用通道-->
+      </ul>
+    </div>
+  </div>
+</div>
+</header>
+<!--头部结束-->
+
+<!--主体区开始--> 
+<div class="mainbody container" id="mainbody">
+
+  <div class="row">
+    <div class="col-md-1">
+      <div class="row">
+        <div class="col-md-12 prompt">
+          查询方向
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+       <div class="score">
+          <select class="form-control" name="direction1" id="sel">  
+            <option value="7" selected="selected">全部</option>
+            <option value="1">嵌入式</option>
+            <option value="2">大数据</option>
+            <option value="3">Web前端</option>
+            <option value="4">Web后台</option>
+            <option value="5">Android开发</option>
+            <option value="6">Linux运维</option>
+          </select>
+        </div>
+    </div>
+      <div class="col-md-1">
+      <div class="row">
+        <div class="col-md-12 prompt">
+          查询状态
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <select class="form-control" name="direction1" id="status">  
+            <option value="5" selected="selected">全部</option>
+            <option value="0">未面试</option>
+            <option value="-1">未通过</option>
+            <option value="3">一面待定</option>
+            <option value="4">二面待定</option>
+            <option value="1">一面通过</option>
+            <option value="2">二面通过</option>
+          </select>
+    </div>
+    <div class="col-md-3 col-md-offset-2">
+      <div class="search">
+        <form role="search">
+          <div class="form-group">
+            <input type="text" class="form-control search clearable" id="num" placeholder="请输入学号" autocomplete="off"> <input style="display:none">
+            <i class="fa fa-search"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>学号</th>
+            <th>专业班级</th>
+            <th>联系电话</th>
+            <th>方向</th>
+            <th>面试状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </div>
+</div>
+<!--主体区结束-->
+<!--页脚开始-->
+<footer>
+  <div class=" footer container">
+    <div class="row">
+      <div class="col-md-4" >
+        <h4> 联系我们</h4>
+        <p>地址：陕西省西安市长安区西安邮电大学东区FZ332</p>
+        <p>邮箱：ThoughtCoding@163.com</p>
+      </div>
+      <div class="col-md-2" >
+        <h4>社交网络</h4>
+        <a href="https://github.com/ThoughtCoding" style="margin-left: 0px;">
+          <img  class="github"src="images/github.png"></a>
+          <a href="##"><img class="weixin"src="images/weixin.png"></a>
+          <a href="http://weibo.com/u/5780284546"><img  class="weibo"src="images/weibo.png"></a>                   
+        </div>
+        <div class="col-md-6">
+          <h4>内容许可</h4>
+          <p >本站由&nbsp<a rel="license" target="_blank" href="http://cloud.xupt.edu.cn"><span style="color:pink;">西安邮电大学计算机学院</span></a>&nbsp提供服务器支持,由&nbsp
+          <a rel="license" target="_blank" href="http://cdn.code.baidu.com"><span style="color:pink;">百度</span></a>&nbsp提供CDN加速服务 </p>
+          <p >如未特别声明,本站所有内容均遵循<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/cn/"><span style="color:pink;">CC-BY-SA 3.0协议（署名-相同方式共享）进行许可</span></a></p>
+        </div>
+      </div>
+    </div>
+    <div  class="friend-link">
+      <span>友情链接:</span>
+      <a href="http://www.xiyou.edu.cn/">西安邮电大学</a>
+      <a href="http://www.xiyoulinux.org/">西邮Linux兴趣小组</a>
+      <a href="http://www.xiyounet.org/">西邮网络科技协会</a>
+      <a href="http://www.xiyoumobile.com/">西邮移动应用开发实验室</a>
+      <a href="http://sta.xupt.edu.cn/">西邮软件科技协会</a>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <a style="color: #b4bbbf;">Copyright © 2017  ThoughtCoding实验室 All Rights Reserved | 陕ICP备040096号  |  version:2015b1</a>
+      </div>
+    </div>
+  </footer>
+
+				<!-- js导入开始 -->
+			<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/message.js"></script>
+				<!-- js导入结束 -->
+			</body>
+</html>

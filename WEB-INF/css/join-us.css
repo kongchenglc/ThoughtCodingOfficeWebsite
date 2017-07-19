@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background:#EDEFF0;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+/*-------------------------------header------------------------------------*/
+
+/*-------------------------------mainbody------------------------------------*/
+.mainbody{
+	margin-top: 45px;
+	width: 70%;
+	margin-left: 180px;
+	margin-bottom: -2px;
+}
+
+.mainbody img{
+  border-radius: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.content01{
+	background-color: white;
+	width: 100%;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.content01 img{
+	width: 400px;
+	height: 400px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 40px;
+}
+
+.slogn01{
+	width: 40%;
+	height: 100%;
+	float: left;
+	margin-left: 80px;
+}
+
+.slogn01 h4{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 20px;
+
+}
+
+.slogn01 p{
+	text-align: center;
+	margin-top: 40px;
+	line-height: 45px;
+	font-size: 18px;
+}
+
+.content02{
+	background-color: white;
+	width: 100%;
+	height: 500px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.content02 img{
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
+.slogn02{
+	width: 40%;
+	height: 100%;
+	float: right;
+	margin-right: 80px;
+}
+
+.slogn02 h4{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 20px;
+
+}
+
+.slogn02 p{
+	text-align: center;
+	margin-top: 40px;
+	line-height: 45px;
+	font-size: 18px;
+}
+/*-------------------------------footer------------------------*/
+footer{
+	background-color: white;
+	margin: 10px auto;
+}
+
+footer .container{
+	width: 80%;
+}
+
+
+.friend-link{
+	text-align: center;
+	margin:15px auto;
+	color: #b4bbbf;
+
+}
+
+.friend-link>a{
+     color: #b4bbbf;
+}
+
+.col-md-12{
+	text-align: center;
+	margin:0px;
+}
+
+.container-fluid .row .col-md-2 >a{
+	margin: 15px 10px;
+  float: left;
+}
+.github{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;
+}
+
+.weixin{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+
+.weibo{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+.copyright{
+	text-align: center;
+	margin:5px auto  20px;
+	
+}
+
+.row{
+	margin-top: 15px;
+}
+
+.btn{
+	margin-top: 10px;
+}
+/*-------------------------------media------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .slogn01{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .slogn02{
+   	width: 100%;
+   	margin-right: 0px;
+   	background-color: white;
+   	margin-top: 60px;
+   }
+   .content01 img{
+   	width: 100%;
+   	margin-left: 0px;
+   	margin-right: 0px;
+   }
+   .content02 img{
+   	width: 100%;
+   	margin-left: 0px;
+   	margin-right: 0px;
+   	margin-top: 10px;
+   }
+}

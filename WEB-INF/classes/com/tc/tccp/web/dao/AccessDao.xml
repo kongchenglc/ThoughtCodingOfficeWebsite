@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tc.tccp.web.dao.AccessDao">
+   <!--   <cache type="org.mybatis.caches.ehcache.LoggingEhcache" >  
+      <property name="timeToIdleSeconds" value="3600"/>
+      <property name="timeToLiveSeconds" value="3600"/>
+      <property name="maxEntriesLocalHeap" value="1000"/>  
+      <property name="maxEntriesLocalDisk" value="10000000"/>  
+      <property name="memoryStoreEvictionPolicy" value="LRU"/>  
+  </cache> -->
+  
+	<!-- 添加评价信息 -->
+	<insert id="addAccess" parameterType="Access">
+		insert into access( user_id,supplement,basescore,technicalscore,studyability,attitude,type)
+		values(#{user_id},#{supplement},#{basescore},#{technicalscore},#{studyability},#{attitude},#{type})
+	</insert>
+	
+	<!-- 查找学生的所有评价信息 -->
+	 <select id="returnMessage" parameterType="string" resultType="Access" > 
+		select * from access where user_id=#{user_id}
+	</select>
+	 
+</mapper>

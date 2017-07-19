@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+body {
+	background-image: url(../images/bk_1.jpg);
+}
+/*-------------------------------header------------------------------------*/
+/*-------------------------------Mainbody--------------------------------*/
+.mainbody{
+	background-color: #ffffff;
+	opacity: 0.8;
+	width:70%;
+	height: 800px;
+}
+form{
+	margin: 0 auto;
+	width: 70%;
+}
+.people{
+	padding: 30px 0 0 0;
+	font-size: 18px;
+}
+.time{
+	/*padding: 30px 0 0 0;*/
+	/*font-size: 25px;*/
+}
+.block_p{
+	display:none;
+}
+#seled{
+	display: block;
+}
+.score{
+	margin: 10px 0;
+}
+.text{
+	margin: 30px 0 10px 0;
+}
+.one{
+	display: none;
+}
+.two{
+	display: none;
+}
+#success{
+	margin-top: 55%;
+}
+/*-----------------------------------footer----------------------------*/
+
+/*-------------------------------media------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .hider{
+   	display:none;
+   }
+}

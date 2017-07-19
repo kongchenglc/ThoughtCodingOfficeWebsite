@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>关于我们</title>
+	<meta name="description" content="实验室官方网站">
+
+	<meta name="keywords" content="西安邮电大学，实验室，ThoughtCoding">
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+  <link rel="stylesheet" type="text/css" href="css/about-us.css">	
+  <script type="text/javascript" src="js/about-us.js"></script>
+  <script type="text/javascript">
+  window.onload=function(){
+    var oDiv=document.getElementById("mainbody");
+    var oParent=getByClass(oDiv,'img');
+    var aDiv=getByClass(oParent,'img_');
+    for(var i=0;i<aDiv.length;i++)
+    {
+
+      aDiv[i].onmouseover=function()       //？闭包导致问题 i值为4
+      {
+        moveOpacity(this,100);           //传入this代替aDiv
+      }                                   
+      aDiv[i].onmouseout=function()
+      {
+        moveOpacity(this,61);
+      }
+
+    }
+  }
+  </script>
+</head>
+<body>
+  <!--头部开始-->
+  <header>
+   <div class="navbar navbar-default" role="navigation">
+     <div class="container">
+      <div class="navbar-header">
+       　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <span class="sr-only">Toggle Navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+       <a href="homepage.html" class="navbar-brand">ThoughtCoding实验室</a>
+     </div>
+     <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+     <div class="collapse navbar-collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="homepage.html">主页</a></li>
+        <li><a href="project-hatch.html">项目孵化</a></li>
+        <li><a href="lab-news.html">实验室动态</a></li>
+        <li class="active"><a href="about-us.html">关于我们</a></li>
+        <li><a href="contact-us.html">联系我们</a></li>
+        <!--2016纳新专用通道-->
+        <li><button type="button "class="btn btn-info btn-apply" onclick="location.href='2016-apply.html';">纳新报名</button></li>
+		<li><button type="button "class="btn btn-info btn-apply" onclick="location.href='interview-question.html';">试题下载</button></li>
+      </ul>
+    </div>
+    </div>
+   </div>
+</header>
+<!--头部结束-->
+
+<!--主体区开始-->
+<div class="mainbody" id="mainbody">
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+          成员一览
+        </a>
+      </h4>
+    </div>
+    <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero">
+      <div class="panel-body img">
+      <div class="img_"><img src="images/bk-3.jpg"></div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          关于小组
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+       在这里小组既可以是共同攻克某一项目队员的集合，也可以是研究相同方向的一群人的互助集体。我们欢迎任何有想法、有创意、有技术的同学来为我们的小组带来新鲜的血液。在这里，你既可以是整合资源对项目运筹帷幄的leader，也可以是专精于某一个方面的geek,我们确保每一个人都能在小组找到独一无二的位置，成为不可或缺的一员。
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          大数据小组
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+       也许你已经发现我们正处于数据爆炸的时代，在社交网站Facebook的计算机集群的磁盘空间中，目前已存储了超过100PB的数据，也就是说，仅Facebook一个网站存储的数据，就已经是人类书本数据量的两倍之多。但是，大数据时代并不仅仅是因为数据量的巨大增量，而是我们能够从中抽取出的数据价值已逐渐成为从竞争中脱颖而出的关键。<br/> 
+       大数据小组就是大数据时代中的一支尖兵，研究的方向有数据分析、数据挖掘，还包括机器学习等，也参与了“基于Hadoop云平台的健康监护系统”等项目的开发，欢迎加入我们小组，在数据时代的洋流中乘风破浪！
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         嵌入式小组
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        嵌入式系统（Embedded System）是指以应用为中心、以计算机技术为基础，软件硬件可裁剪、适应应用系统对功能、可靠性、成本、体积、功耗严格要求的专用计算机系统。举例来说，大到油田的集散控制系统和工厂流水线，小到家用VCD机或手机，甚至组成普通PC终端设备的键盘、鼠标、硬盘、Modem等均是由嵌入式处理器控制的。<br/> 
+        嵌入式小组主要负责实验室项目的硬件设计和制作，承载的个体既可以是人人都接触过的智能小车，也可是稍有难度的四旋翼无人机，当然更可以是你自己创造的智能硬件。<br/>
+        只要你对智能硬件感兴趣，有一定的C语言编程基础，就可以加入我们，成为指挥硬件的工程师。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          WEB开发小组
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+       Web前端开发技术包括三个要素：HTML、CSS和JavaScript，但随着RIA的流行和普及，Flash/Flex、Silverlight、XML和服务器端语言也是前端开发工程师应该掌握的。随着时代的发展，前端开发技术的三要素也演变成为现今的：html5，css3，jquery。Web前端开发工程师既要与上游的交互设计师、视觉设计师和产品经理沟通，又要与下游的服务器端工程师沟通，需要掌握的技能非常多。
+      </div>
+    </div>
+  </div><div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Android开发小组
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+       Android 是Google开发的基于Linux平台的开源手机操作系统。它包括操作系统、用户界面和应用程序—— 移动电话工作所需的全部软件，而且不存在任何以往阻碍移动产业创新的专有权障碍。谷歌与开放手机联盟合作开发了 Android，这个联盟由包括中国移动、摩托罗拉、高通、宏达和T-Mobile在内的 30 多家技术和无线应用的领军企业组成。通过与运营商、设备制造商、开发商和其他有关各方结成深层次的合作伙伴关系，我们希望借助建立标准化、开放式的移动电话软件平台，在移动产业内形成一个开放式的生态系统。我们认为此举必将推进更好、更快的创新，为移动用户提供不可预知的应用和服务。<br/>
+      Android开发小组是实验室最贴近学校实际课程的一个小组，主要负责实验室各个项目的Android客户端的开发和维护工作。曾经开发了基于Hadhoop云的健康监测系统客户端、智能停车场客户端等于实验室项目配套的客户端软件。<br/>
+      只要你热爱移动应用开发，有一定的Java编程基础，就可以加入我们。<br/>
+      我们会用实际开发环境和实战项目来锻炼你的开发能力，与实验室一起成长。
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!--主体区结束-->
+
+
+
+
+<!--页脚开始-->
+<footer>
+  <div class=" footer container">
+    <div class="row">
+      <div class="col-md-4" >
+        <h4> 联系我们</h4>
+        <p>地址：陕西省西安市长安区西安邮电大学东区FZ332</p>
+        <p>邮箱：ThoughtCoding@163.com</p>
+      </div>
+      <div class="col-md-2" >
+        <h4>社交网络</h4>
+        <a href="https://github.com/ThoughtCoding" style="margin-left: 0px;">
+          <img  class="github"src="images/github.png"></a>
+          <a href="##"><img class="weixin"src="images/weixin.png"></a>
+          <a href="http://weibo.com/u/5780284546"><img  class="weibo"src="images/weibo.png"></a>                   
+        </div>
+        <div class="col-md-6">
+          <h4>内容许可</h4>
+          <p >本站由&nbsp<a rel="license" target="_blank" href="http://cloud.xupt.edu.cn"><span style="color:pink;">西安邮电大学计算机学院</span></a>&nbsp提供服务器支持,由&nbsp
+          <a rel="license" target="_blank" href="http://cdn.code.baidu.com"><span style="color:pink;">百度</span></a>&nbsp提供CDN加速服务 </p>
+          <p >如未特别声明,本站所有内容均遵循<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/cn/"><span style="color:pink;">CC-BY-SA 3.0协议（署名-相同方式共享）进行许可</span></a></p>
+        </div>
+      </div>
+    </div>
+    <div  class="friend-link">
+      <span>友情链接:</span>
+      <a href="http://www.xiyou.edu.cn/">西安邮电大学</a>
+      <a href="http://www.xiyoulinux.org/">西邮Linux兴趣小组</a>
+      <a href="http://www.xiyounet.org/">西邮网络科技协会</a>
+      <a href="http://www.xiyoumobile.com/">西邮移动应用开发实验室</a>
+      <a href="http://sta.xupt.edu.cn/">西邮软件科技协会</a>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <a style="color: #b4bbbf;">Copyright © 2017  ThoughtCoding实验室 All Rights Reserved | 陕ICP备040096号  |  version:2015b1</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- js导入开始 -->
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- js导入结束 -->
+</body>
+</html>

@@ -1,0 +1,34 @@
+$(function(){
+	$("#username").val("");
+	$("#password").val("");
+	$(".btn").click(function(){
+			$.ajax({
+				type:"POST",
+				url:"../student/login",
+				dataType:"json",
+				data:{
+					"student_name":$("#username").val(),
+					"password":$("#password").val(),
+				},
+				success:function(data){
+					if(data.result==true){
+						setcookie();
+						window.location.href="2017-ap-home.html"
+					}
+					else{
+						$("#error").html("输入用户名或密码错误");
+					}
+				}
+				,
+				error:function(){
+					$("#error").html("输入用户名或密码错误");	
+				}
+		   })
+	});
+	$("#username").focus(function(){
+		$("#error").html("");
+	})
+	$("#password").focus(function(){
+		$("#error").html("");
+	})
+})

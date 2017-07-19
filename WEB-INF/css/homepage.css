@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+
+body {
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background: #EDEFF0;
+	background-size:cover;
+	background-attachment: fixed;
+}
+/*-------------------------------header------------------------------------*/
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	text-align: middle;
+	margin: 0px;
+	background-color: white;
+	z-index: 1;
+}
+.nav>li>a{
+	padding:15px 35px;
+}
+
+/*------------------------------body---------------------------------------*/
+ .carousel p{
+ 	font-size: 25px;
+ }
+ .carousel .item{
+ 	height: 600px;
+
+ }
+.carousel img{
+	width: 100%;
+}
+.carousel-caption {
+	display: inline-block;
+  vertical-align: middle;
+  top: 35%;
+	font-size: 20px;
+	font-color:black;
+
+}
+
+.guidance{
+	margin: 50px auto;
+}
+.guidance .row .col-md-3>h4 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.guidance .row .col-md-3{
+	text-align: center;
+}
+
+.guidance .row .col-md-3>p{
+	text-align: center;
+	margin: 20px auto;
+}
+
+
+
+.QandA{
+	margin: 30px auto;
+	width: 80%;
+	/*background-color: rgba(239,239,239,1);*/
+}
+
+.
+.QandA .row{
+	width: 80%;
+	margin: 15px auto;
+
+}
+
+.QandA .row p{
+	line-height: 30px;
+	margin: 10px auto;
+}
+.QandA  .row .col-md-8{
+	text-align: center;
+}
+
+.QandA  .row .col-md-8>h4{
+	margin: 30px auto;
+}
+
+.QandA .row .col-md-4{
+	text-align: center;
+}
+
+
+.whoweare{
+	width: 256px;
+	height: 256px;
+}
+
+.whatwearedoing{
+	width: 256px;
+	height: 256px;
+}
+
+.judgment{
+	/*background-color: rgba(239,239,239,1);*/
+	margin: 30px auto;
+}
+
+.judgment .row{
+	width: 80%;
+	margin: 0px auto;
+}
+
+.judgment .row .col-md-5{
+	margin: 0px auto;
+}
+
+.judgment .row .col-md-7{
+	margin: 0px auto;
+}
+
+.user-pic1{
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin: 30px 20px;
+}
+
+.user-pic2{
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin: 10px 20px 30px 20px;
+}
+
+.judgment .row .col-md-7 p{
+	margin: 25px 5px;
+	max-width: 420px;
+}
+
+.teacher-pic1{
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin: 60px 30px 50px 30px;
+}
+
+.judgment .row .col-md-5 p{
+	margin: 40px 5px;
+	max-width: 420px;
+}
+
+
+/*---------------------------------footer---------------------------------------*/
+
+footer{
+	background-color: white;
+	margin: 10px auto;
+}
+
+footer .container{
+	width: 80%;
+}
+
+
+.friend-link{
+	text-align: center;
+	margin:15px auto;
+	color: #b4bbbf;
+
+}
+
+.friend-link>a{
+     color: #b4bbbf;
+}
+
+.col-md-12{
+	text-align: center;
+	margin:0px;
+}
+
+.container-fluid .row .col-md-2 >a{
+	margin: 15px 10px;
+  float: left;
+}
+.github{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;
+}
+
+.weixin{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+
+.weibo{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+.copyright{
+	text-align: center;
+	margin:5px auto  20px;
+	
+}
+
+.row{
+	margin-top: 15px;
+}
+
+.btn{
+	margin-top: 10px;
+}
+/*---------------------------------media---------------------------------------*/
+/*只在小屏幕显示*/
+@media screen and (max-width: 768px) {
+   .success{
+   	width: 100%;
+   }
+   .carousel p{
+   	font-size: 14px;
+   }
+   .carousel h3{
+   	font-size: 14px;
+   }
+   .carousel .item{
+   	height: 250px;
+   }
+   .carousel-caption{
+   	top: 30%;
+   }
+  .carousel .item img{
+  	height: 250px;
+  }
+  .carousel-caption{
+  	font-size: 14px;
+  }
+  .user-pic{
+  	display: none;
+  }
+  .navbar-brand{
+  	padding: 15px 1px;
+  }
+  .judgment .row{
+  	width: 100%;
+  	margin: 0px;
+  }
+  .big_screen{
+  	display: none;
+  }
+
+}
+/*只在大屏幕显示*/
+@media screen and (min-width: 768px){
+	.small_screen{
+		display: none;
+	}
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+body {
+	background-image: url(../images/background-check.jpg);
+}
+/*-------------------------------header------------------------------------*/
+/*-------------------------------Mainbody--------------------------------*/
+.mainbody{
+	background-color: #ffffff;
+	opacity: 0.8;
+	width:70%;
+	height: 800px;
+}
+form{
+	margin: 0 auto;
+	width: 70%;
+}
+#word{
+	margin: 0 auto;
+	width: 70%;
+	border:1px solid #cdcdcd;
+}
+.checkbody{
+	margin: 70px 0 0 0;
+}
+.de{
+	margin: 0 0 20px 0;
+}
+.w{
+	margin: 5px 0 0 0;
+}
+.w p{
+	text-indent: 26px;
+	padding: 10px 5px 10px 5px;
+	text-align: justify;
+}
+/*-----------------------------------footer----------------------------*/
+
+/*-------------------------------media------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .hider{
+   	display:none;
+   }
+}

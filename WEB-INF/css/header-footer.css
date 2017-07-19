@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body {
+	margin-top: 60px;
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background: #EDEFF0;
+	background-size:cover;
+}
+/*-------------------------------header------------------------------------*/
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	text-align: middle;
+	margin: 0px;
+	background-color: white;
+	z-index: 1;
+}
+
+.nav>li>a{
+	padding: 15px 35px;
+}
+.navbar .nav > li .dropdown-menu {
+margin: 0;
+}
+.navbar .nav > li:hover .dropdown-menu {
+display: block;
+}
+
+
+/*---------------------------------footer------------------------------------*/
+footer{
+	background-color: white;
+}
+
+footer .container{
+	width: 80%;
+	margin: 10px auto 0 auto;
+}
+
+
+.friend-link{
+	text-align: center;
+	margin:15px auto;
+	color: #b4bbbf;
+
+}
+
+.friend-link>a{
+     color: #b4bbbf;
+}
+
+.col-md-12{
+	text-align: center;
+	margin:0px;
+}
+
+.container-fluid .row .col-md-2 >a{
+	margin: 15px 10px;
+        float: left;
+}
+.github{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;
+}
+
+.weixin{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+
+.weibo{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+.copyright{
+	text-align: center;
+	margin:5px auto  20px;
+	
+}
+
+.row{
+	margin-top: 15px;
+}
+
+.btn{
+	margin-top: 10px;
+}

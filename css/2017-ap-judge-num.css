@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+body {
+	margin-top: 60px;
+	color: #212121;
+	font-family:Arial,'微软雅黑';
+	font-size: 14px;
+	font-color:white;
+	background: #EDEFF0;
+	background-size:cover;
+	background-image: url(../images/background-check.jpg);
+}
+/*-------------------------------header------------------------------------*/
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	text-align: middle;
+	margin: 0px;
+	background-color: white;
+	z-index: 1;
+}
+.nav li button{
+	margin-right: 25px;
+}
+/*-------------------------------Mainbody--------------------------------*/
+.mainbody{
+	width:50%;
+	height: 500px;
+}
+.word_1{
+	font-size: 58px;
+	margin: 100px 0 20px 0;
+	/*color: #ffffff;*/
+}
+.word_2{
+	margin: 20px 0 30px 0;
+	/*color: #ffffff;*/
+}
+input{
+	text-align: center;
+}
+.fa-search::before{
+	content:"";
+	width: 15px;
+	height: 15px;
+	background-image: url(../images/check.png);
+	background-repeat: no-repeat;
+	position: relative;left:580px;top:-24px;
+	display:block;
+}
+/*footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}*/
+
+
+input::input-placeholder { text-align: center }
+input::-ms-input-placeholder{text-align: center;} 
+input::-webkit-input-placeholder{text-align: center;}
+/*-----------------------------------footer----------------------------*/
+footer{
+	background-color: white;
+	margin: 10px auto 0 auto;
+}
+
+footer .container{
+	width: 80%;
+}
+
+
+.friend-link{
+	text-align: center;
+	margin:15px auto;
+	color: #b4bbbf;
+
+}
+
+.friend-link>a{
+     color: #b4bbbf;
+}
+
+.col-md-12{
+	text-align: center;
+	margin:0px;
+}
+
+.container-fluid .row .col-md-2 >a{
+	margin: 15px 10px;
+  float: left;
+}
+.github{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;
+}
+
+.weixin{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+
+.weibo{
+	width: 24px;
+	height: 24px;
+	margin: 10px 10px;	
+}
+.copyright{
+	text-align: center;
+	margin:5px auto  20px;
+	
+}
+
+.row{
+	margin-top: 15px;
+}
+/*-------------------------------media------------------------*/
+@media screen and (max-width: 768px) {
+   .mainbody{
+   	width: 100%;
+   	margin-left: 0px;
+   }
+   .hider{
+   	display:none;
+   }
+}
